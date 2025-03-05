@@ -33,7 +33,7 @@
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Тіло запиту (JSON):**  
-  Див. [приклад у файлі колекції](#) (поля `start_date`, `end_date`, `addresses`, переклади, `offers` тощо).
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses`, переклади, `offers` тощо).
 - **Опис:**  
   Створює нову знижку з акційними пропозиціями для вказаних адрес.
 
