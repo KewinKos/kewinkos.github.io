@@ -4,7 +4,7 @@
 
 ### 1. Отримання JWT токена
 - **Метод:** `POST`
-- **URL:** `{{url}}/api/sync/login`
+- **URL:** `{{url}}/api/sync/auth/login`
 - **Тіло запиту (JSON):**
   ```json
   {
