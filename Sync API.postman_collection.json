@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "650c4896-ae28-4239-8e51-a6292a8c6f8e",
+		"_postman_id": "9680e5ee-2b63-4b27-ac27-103a189e9b8e",
 		"name": "Sync API",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "2854204"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28337347"
 	},
 	"item": [
 		{
@@ -20,17 +20,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{url}}/api/sync/login",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"sync",
-						"login"
-					]
-				}
+				"url": "{{url}}/api/sync/login"
 			},
 			"response": []
 		},
@@ -39,13 +29,9 @@
 			"request": {
 				"auth": {
 					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc",
-							"type": "string"
-						}
-					]
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc"
+					}
 				},
 				"method": "POST",
 				"header": [],
@@ -58,18 +44,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{url}}/api/sync/discount/create",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"sync",
-						"discount",
-						"create"
-					]
-				}
+				"url": "{{url}}/api/sync/discount/create"
 			},
 			"response": []
 		},
@@ -78,13 +53,9 @@
 			"request": {
 				"auth": {
 					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc",
-							"type": "string"
-						}
-					]
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc"
+					}
 				},
 				"method": "POST",
 				"header": [],
@@ -97,19 +68,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{url}}/api/sync/discount/update/22505",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"sync",
-						"discount",
-						"update",
-						"22505"
-					]
-				}
+				"url": "{{url}}/api/sync/discount/update/22505"
 			},
 			"response": []
 		},
@@ -118,29 +77,13 @@
 			"request": {
 				"auth": {
 					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc",
-							"type": "string"
-						}
-					]
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc"
+					}
 				},
 				"method": "DELETE",
 				"header": [],
-				"url": {
-					"raw": "{{url}}/api/sync/discount/remove/22505",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"sync",
-						"discount",
-						"remove",
-						"22505"
-					]
-				}
+				"url": "{{url}}/api/sync/discount/remove/22505"
 			},
 			"response": []
 		},
@@ -149,28 +92,133 @@
 			"request": {
 				"auth": {
 					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc",
-							"type": "string"
-						}
-					]
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0MTA3NjE0MywiZXhwIjoyMDUyMTE2MDgzLCJuYmYiOjE3NDEwNzYxNDMsImp0aSI6IjVhUmZUY3JMekVueUQ5S0giLCJzdWIiOiIyMzQ2NzUiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UjH59Q71fgI9w-SZpmcBA7b0y1EZ84fxShmxJaQkNGc"
+					}
 				},
 				"method": "POST",
 				"header": [],
-				"url": {
-					"raw": "{{url}}/api/sync/auth/refresh",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"api",
-						"sync",
-						"auth",
-						"refresh"
-					]
-				}
+				"url": "{{url}}/api/sync/auth/refresh"
+			},
+			"response": []
+		},
+		{
+			"name": "New Discount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0NDgyMzI1NCwiZXhwIjoyMzY2OTAzMTk0LCJuYmYiOjE3NDQ4MjMyNTQsImp0aSI6ImpNckR0SVFPOU02amVFcHoiLCJzdWIiOiIyNDA2MDIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.i1eKtYdODCU2T-KSg3U8-wdotIooUxxZC_XhhpBw-Lw"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"start_date\": \"2025-07-01\",\r\n  \"end_date\": \"2025-07-07\",\r\n  \"external_id\" : \"22505\",\r\n  \"addresses\": [\r\n    {\"city\": \"Харків\", \"address\": \"пр. Героїв Харкова, 256-б\"},\r\n    {\"city\": \"Харків\", \"address\": \"вул. Тракторобудівників, 57\"},\r\n    {\"city\": \"Полтава\", \"address\": \"вул. Ковпака, 26\"},\r\n    {\"city\": \"Миколаїв\", \"address\": \"пр-т Миру, 1/1\"},\r\n    {\"city\": \"Рівне\", \"address\": \"вул. Кулика і Гудачека, 23\"},\r\n    {\"city\": \"Чернівці\", \"address\": \"вул. Руська, 248є\"}\r\n  ],\r\n  \"uk\": {\r\n    \"name\": \"Тиждень знижок на продукти\",\r\n    \"description\": \"Великий вибір акційних товарів за вигідними цінами\"\r\n  },\r\n  \"ru\": {\r\n    \"name\": \"Неделя скидок на продукты\",\r\n    \"description\": \"Большой выбор акционных товаров по выгодным ценам\"\r\n  },\r\n  \"offers\": [\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/03/TT_03.03-09.03_site_VM_.webp\",\r\n      \"discount\": 20,\r\n      \"external_id\": \"556\",\r\n      \"price_before\": 150.00,\r\n      \"price_after\": 120.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Харків\", \"address\": \"пр. Героїв Харкова, 256-б\"},\r\n        {\"city\": \"Харків\", \"address\": \"вул. Тракторобудівників, 57\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": false,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/stegno-kuryache-oholodzhene-1-kg/\",\r\n      \"barcode\": 1234567890123,\r\n      \"start_date\": \"2025-07-01\",\r\n      \"end_date\": \"2025-07-07\",\r\n      \"uk\": {\"name\": \"Стегно куряче, охолоджене\", \"description\": \"Свіже м'ясо за вигідною ціною\"},\r\n      \"ru\": {\"name\": \"Бедро куриное, охлажденное\", \"description\": \"Свежая курятина по выгодной цене\"}\r\n    },\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/03/TT_03.03-09.03_site_VM_3.webp\",\r\n      \"discount\": 18,\r\n      \"external_id\": \"557\",\r\n      \"price_before\": 350.00,\r\n      \"price_after\": 287.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Полтава\", \"address\": \"вул. Ковпака, 26\"},\r\n        {\"city\": \"Миколаїв\", \"address\": \"пр-т Миру, 1/1\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": false,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/krevetky-syri-v-pantsyri-rozmorozheni-1-kg/\",\r\n      \"barcode\": 1112223334445,\r\n      \"start_date\": \"2025-07-01\",\r\n      \"end_date\": \"2025-07-07\",\r\n      \"uk\": {\"name\": \"Креветки сирі в панцирі\", \"description\": \"Смачні морепродукти\"},\r\n      \"ru\": {\"name\": \"Креветки сырые в панцире\", \"description\": \"Вкусные морепродукты\"}\r\n    },\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/03/TT_03.03-09.03_site_VM_4.webp\",\r\n      \"discount\": 30,\r\n      \"external_id\": \"558\",\r\n      \"price_before\": 50.00,\r\n      \"price_after\": 35.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Рівне\", \"address\": \"вул. Кулика і Гудачека, 23\"},\r\n        {\"city\": \"Чернівці\", \"address\": \"вул. Руська, 248є\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": true,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/apelsyn-1-kg/\",\r\n      \"barcode\": 5678901234567,\r\n      \"start_date\": \"2025-07-01\",\r\n      \"end_date\": \"2025-07-07\",\r\n      \"uk\": {\"name\": \"Апельсин\", \"description\": \"Соковиті цитрусові за найкращою ціною\"},\r\n      \"ru\": {\"name\": \"Апельсин\", \"description\": \"Сочные цитрусовые по лучшей цене\"}\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/sync/discount/new"
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0NDg5MDg1MCwiZXhwIjoyMzY2OTcwNzkwLCJuYmYiOjE3NDQ4OTA4NTAsImp0aSI6IjNSWWhUWGxjblRncFNWbXYiLCJzdWIiOiIyNDA2MDIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.QpQCcTLUORWX-4ieYPjkkdOER3kqy3e_eXN0T7NhQtc"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"offers\": [\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/03/TT_03.03-09.03_site_VM_.webp\",\r\n      \"discount\": 20,\r\n      \"external_id\": \"556\",\r\n      \"price_before\": 140.00,\r\n      \"price_after\": 135.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Харків\", \"address\": \"пр. Героїв Харкова, 256-б\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": false,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/stegno-kuryache-oholodzhene-1-kg/\",\r\n      \"barcode\": 1234567890123,\r\n      \"start_date\": \"2025-07-01\",\r\n      \"end_date\": \"2025-07-07\",\r\n      \"uk\": {\"name\": \"Стегно куряче, охолоджене змінено\", \"description\": \"Свіже м'ясо за вигідною ціною\"},\r\n      \"ru\": {\"name\": \"Бедро куриное, охлажденное изменено\", \"description\": \"Свежая курятина по выгодной цене\"}\r\n    },\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/03/TT_03.03-09.03_site_VM_3.webp\",\r\n      \"discount\": 18,\r\n      \"external_id\": \"557\",\r\n      \"price_before\": 350.00,\r\n      \"price_after\": 105.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Полтава\", \"address\": \"вул. Ковпака, 26\"},\r\n        {\"city\": \"Миколаїв\", \"address\": \"пр-т Миру, 1/1\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": false,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/krevetky-syri-v-pantsyri-rozmorozheni-1-kg/\",\r\n      \"barcode\": 1112223334445,\r\n      \"start_date\": \"2025-07-01\",\r\n      \"end_date\": \"2025-07-07\",\r\n      \"uk\": {\"name\": \"Креветки сирі в панцирі\", \"description\": \"Смачні морепродукти\"},\r\n      \"ru\": {\"name\": \"Креветки сырые в панцире\", \"description\": \"Вкусные морепродукты\"}\r\n    },\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/03/TT_03.03-09.03_site_VM_4.webp\",\r\n      \"discount\": 30,\r\n      \"external_id\": \"558\",\r\n      \"price_before\": 50.00,\r\n      \"price_after\": 35.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Рівне\", \"address\": \"вул. Кулика і Гудачека, 23\"},\r\n        {\"city\": \"Чернівці\", \"address\": \"вул. Руська, 248є\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": true,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/apelsyn-1-kg/\",\r\n      \"barcode\": 5678901234567,\r\n      \"start_date\": \"2025-07-01\",\r\n      \"end_date\": \"2025-07-07\",\r\n      \"uk\": {\"name\": \"Апельсин\", \"description\": \"Соковиті цитрусові за найкращою ціною\"},\r\n      \"ru\": {\"name\": \"Апельсин\", \"description\": \"Сочные цитрусовые по лучшей цене\"}\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/sync/discount/22506/add-offers"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0NDg5MDg1MCwiZXhwIjoyMzY2OTcwNzkwLCJuYmYiOjE3NDQ4OTA4NTAsImp0aSI6IjNSWWhUWGxjblRncFNWbXYiLCJzdWIiOiIyNDA2MDIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.QpQCcTLUORWX-4ieYPjkkdOER3kqy3e_eXN0T7NhQtc"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"offers\": [\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/04/TT_14.04-20.04_site_VM_7-1.jpg\",\r\n      \"discount\": 20,\r\n      \"external_id\": \"45663\",\r\n      \"price_before\": 150.00,\r\n      \"price_after\": 120.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Харків\", \"address\": \"пр. Героїв Харкова, 256-б\"},\r\n        {\"city\": \"Харків\", \"address\": \"вул. Тракторобудівників, 57\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": false,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/mintaj-tushka-s-m-1-kg/\",\r\n      \"barcode\": 1234567890123,\r\n      \"start_date\": \"2025-04-14\",\r\n      \"end_date\": \"2025-04-25\",\r\n      \"uk\": {\"name\": \"Стегно куряче, охолоджене\", \"description\": \"Свіже м'ясо за вигідною ціною\"},\r\n      \"ru\": {\"name\": \"Бедро куриное, охлажденное\", \"description\": \"Свежая курятина по выгодной цене\"}\r\n    },\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/04/TT_14.04-20.04_site_VM_11.jpg\",\r\n      \"discount\": 18,\r\n      \"external_id\": \"45656\",\r\n      \"price_before\": 350.00,\r\n      \"price_after\": 287.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Полтава\", \"address\": \"вул. Ковпака, 26\"},\r\n        {\"city\": \"Миколаїв\", \"address\": \"пр-т Миру, 1/1\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": false,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/pomidor-1-kg/\",\r\n      \"barcode\": 1112223334445,\r\n      \"start_date\": \"2025-04-14\",\r\n      \"end_date\": \"2025-04-25\",\r\n      \"uk\": {\"name\": \"Креветки сирі в панцирі\", \"description\": \"Смачні морепродукти\"},\r\n      \"ru\": {\"name\": \"Креветки сырые в панцире\", \"description\": \"Вкусные морепродукты\"}\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/sync/discount/22506/update-offers"
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0NDk3NzcxOSwiZXhwIjoyMzY3MDU3NjU5LCJuYmYiOjE3NDQ5Nzc3MTksImp0aSI6IlJOVVRJNnE2d1pQS3F3S1giLCJzdWIiOiIyNDA2MDIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-GRYnSPYESxV5Efkiq2WNkw66J7pDYpn8plYrvgfq0g"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"offers\": [\r\n    {\r\n      \"image\": \"https://velmart.ua/wp-content/uploads/2025/03/TT_03.03-09.03_site_VM_.webp\",\r\n      \"discount\": 20,\r\n      \"external_id\": \"556\",\r\n      \"price_before\": 150.00,\r\n      \"price_after\": 120.00,\r\n      \"addresses\": [\r\n        {\"city\": \"Харків\", \"address\": \"пр. Героїв Харкова, 256-б\"},\r\n        {\"city\": \"Харків\", \"address\": \"вул. Тракторобудівників, 57\"}\r\n      ],\r\n      \"weight\": \"1кг\",\r\n      \"is_image_has_price\": false,\r\n      \"external_url\": \"https://velmart.ua/product-of-week/stegno-kuryache-oholodzhene-1-kg/\",\r\n      \"barcode\": 1234567890123,\r\n      \"start_date\": \"2025-07-01\",\r\n      \"end_date\": \"2025-07-07\",\r\n      \"uk\": {\"name\": \"Стегно куряче, охолоджене\", \"description\": \"Свіже м'ясо за вигідною ціною\"},\r\n      \"ru\": {\"name\": \"Бедро куриное, охлажденное\", \"description\": \"Свежая курятина по выгодной цене\"}\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/sync/discount/22506/remove-offers"
+			},
+			"response": []
+		},
+		{
+			"name": "Create emty Discount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODAvYXBpL3N5bmMvYXV0aC9sb2dpbiIsImlhdCI6MTc0NDk2NDQ5MCwiZXhwIjoyMzY3MDQ0NDMwLCJuYmYiOjE3NDQ5NjQ0OTAsImp0aSI6InM5eWhWUjhjVnFEQ3BsQ2wiLCJzdWIiOiIyNDA2MDIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Lvs-GfBt5TzmBuq0kE5ER9-GWbOjdqnsfkWx0NbeIdM"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"start_date\": \"2025-04-14\",\r\n  \"end_date\": \"2025-04-25\",\r\n  \"external_id\" : \"22505\",\r\n  \"addresses\": [\r\n    {\"city\": \"Харків\", \"address\": \"пр. Героїв Харкова, 256-б\"},\r\n    {\"city\": \"Харків\", \"address\": \"вул. Тракторобудівників, 57\"},\r\n    {\"city\": \"Полтава\", \"address\": \"вул. Ковпака, 26\"},\r\n    {\"city\": \"Миколаїв\", \"address\": \"пр-т Миру, 1/1\"},\r\n    {\"city\": \"Рівне\", \"address\": \"вул. Кулика і Гудачека, 23\"},\r\n    {\"city\": \"Чернівці\", \"address\": \"вул. Руська, 248є\"}\r\n  ],\r\n  \"uk\": {\r\n    \"name\": \"Краща ціна\",\r\n    \"description\": \"Великий вибір акційних товарів за вигідними цінами\"\r\n  },\r\n  \"ru\": {\r\n    \"name\": \"Лучшая цена\",\r\n    \"description\": \"Большой выбор акционных товаров по выгодным ценам\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/api/sync/discount/create"
 			},
 			"response": []
 		}

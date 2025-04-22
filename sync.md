@@ -39,7 +39,31 @@
 
 ---
 
-### 4. Оновлення знижки
+### 4. Створення знижки (без акційних пропозицій)
+- **Метод:** `POST`
+- **URL:** `{{url}}/api/sync/discount/create`
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**  
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses`, переклади).
+- **Опис:**  
+  Створює нову знижку. Знижка має сттаус неактивної до моменту додавання акційних пропозицій
+
+---
+
+### 5. Додавання акційних пропозицій до знижки
+- **Метод:** `POST`
+- **URL:** `{{url}}/api/sync/discount/{external_id}/add-offers`
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**  
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поле `offers`).
+- **Опис:**  
+  Додає акційні пропозиції до знижки за її `external_id`
+
+---
+
+### 5. Оновлення знижки
 - **Метод:** `POST`
 - **URL:** `{{url}}/api/sync/discount/update/{external_id}`  
   (наприклад: `/update/22505`)
@@ -52,7 +76,20 @@
 
 ---
 
-### 5. Видалення знижки
+### 6. Оновлення акційної пропозиції
+- **Метод:** `POST`
+- **URL:** `{{url}}/api/sync/discount/{external_id}/update-offers`  
+  (наприклад: `/22505/update-offers`)
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**  
+  Аналогічно тілу для додавання акційних пропозицій, але з оновленими даними.
+- **Опис:**  
+  Оновлює акційні пропзиції для існуючої знижки за її `external_id`.
+
+---
+
+### 7. Видалення знижки
 - **Метод:** `DELETE`
 - **URL:** `{{url}}/api/sync/discount/remove/{external_id}`  
   (наприклад: `/remove/22505`)
@@ -60,6 +97,19 @@
   `Authorization: Bearer <JWT_TOKEN>`
 - **Опис:**  
   Видаляє знижку та всі пов’язані з нею акційні пропозиції.
+
+---
+
+### 8. Видалення акційної пропозиції зі знижки
+- **Метод:** `DELETE`
+- **URL:** `{{url}}/api/sync/discount/{external_id}/remove-offers`  
+  (наприклад: `/22505/remove-offers`)
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поле `offers`).
+- **Опис:**  
+  Видаляє акційні пропозиції зі знижки за її `external_id`.
   
 ---
 
