@@ -102,8 +102,8 @@
 
 ### 9. Видалення акційної пропозиції зі знижки
 - **Метод:** `DELETE`
-- **URL:** `{{url}}/api/sync/discount/{external_id}/remove-offer/{offer_id}`  
-  (наприклад: `/api/sync/discount/22505/remove-offer/49599`)
+- **URL:** `{{url}}/api/sync/discount/{external_id}/remove-offers/{offer_id}`  
+  (наприклад: `/api/sync/discount/22505/remove-offers/49599`)
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Опис:**  
