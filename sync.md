@@ -102,14 +102,12 @@
 
 ### 9. Видалення акційної пропозиції зі знижки
 - **Метод:** `DELETE`
-- **URL:** `{{url}}/api/sync/discount/{external_id}/remove-offers`  
-  (наприклад: `/22505/remove-offers`)
+- **URL:** `{{url}}/api/sync/discount/{external_id}/remove-offer/{offer_id}`  
+  (наприклад: `/api/sync/discount/22505/remove-offer/49599`)
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
-- **Тіло запиту (JSON):**
-  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поле `offers`).
 - **Опис:**  
-  Видаляє акційні пропозиції зі знижки за її `external_id`.
+  Видаляє акційну пропозицію зі знижки за її `external_id` та `offerId`.
   
 ---
 
