@@ -33,7 +33,7 @@
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Тіло запиту (JSON):**  
-  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses`, переклади, `offers` тощо).
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses` - необов'язково, переклади, `offers` тощо).
 - **Опис:**  
   Створює нову знижку з акційними пропозиціями для вказаних адрес.
 
@@ -45,7 +45,7 @@
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Тіло запиту (JSON):**  
-  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses`, переклади).
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses` - необов'язково, переклади).
 - **Опис:**  
   Створює нову знижку. Знижка має сттаус неактивної до моменту додавання акційних пропозицій
 
