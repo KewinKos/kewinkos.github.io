@@ -33,7 +33,7 @@
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Тіло запиту (JSON):**  
-  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses`, переклади, `offers` тощо).
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses` - необов'язково, переклади, `offers` тощо).
 - **Опис:**  
   Створює нову знижку з акційними пропозиціями для вказаних адрес.
 
@@ -45,7 +45,7 @@
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Тіло запиту (JSON):**  
-  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses`, переклади).
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `start_date`, `end_date`, `addresses` - необов'язково, переклади).
 - **Опис:**  
   Створює нову знижку. Знижка має сттаус неактивної до моменту додавання акційних пропозицій
 
@@ -111,6 +111,54 @@
   
 ---
 
+### 10. Отримання списку знижок
+- **Метод:** `GET`
+- **URL:** `{{url}}/api/sync/discount/list`  
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**  
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `page`, `perPage`).
+- **Опис:**  
+  Отримує список знижок, вказавши сторінку `page` та кількість результатів на сторінку `perPage`.
+  
+---
+
+### 11. Отримання списку акційних пропозицій для знижки
+- **Метод:** `GET`
+- **URL:** `{{url}}/api/sync/discount/{external_id}/offers-list`  
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**  
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поля `page`, `perPage`).
+- **Опис:**  
+  Отримує список акційних пропозицій для знижки, вказавши сторінку `page` та кількість результатів (акційних пропозицій) на сторінку `perPage`.
+  
+---
+
+### 12. Додавання адрес до акційної пропозиції
+- **Метод:** `POST`
+- **URL:** `{{url}}/api/sync/discount/{discount_external_id}/add-addresses/{offer_external_id}`  
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**  
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поле `addresses`).
+- **Опис:**  
+  Додає нові адреси для акційної пропозиції, вказавши масив адрес `addresses` 
+  
+---
+
+### 13. Видалення адрес з акційної пропозиції
+- **Метод:** `DELETE`
+- **URL:** `{{url}}/api/sync/discount/{discount_external_id}/remove-addresses/{offer_external_id}`  
+- **Заголовок:**  
+  `Authorization: Bearer <JWT_TOKEN>`
+- **Тіло запиту (JSON):**  
+  Див. [приклад у файлі колекції](https://github.com/KewinKos/kewinkos.github.io/blob/main/Sync%20API.postman_collection.json) (поле `addresses`).
+- **Опис:**  
+  Видаляє адреси для акційної пропозиції, вказавши масив адрес `addresses` 
+  
+---
+
 ## Валідація даних
 
 ### Загальні правила для знижки
@@ -119,7 +167,7 @@
 | `start_date`  | Рядок        | Формат: `YYYY-MM-DD` (наприклад: 2025-07-01) | Так          |
 | `end_date`    | Рядок        | Формат: `YYYY-MM-DD`                      | Так          |
 | `external_id` | Рядок        | Довжина: 1-255 символів                   | Так          |
-| `addresses`   | Масив об’єктів | Мінімум 1 елемент                         | Так          |
+| `addresses`   | Масив об’єктів | Мінімум 1 елемент                         | Ні          |
 | `addresses.*.city` | Рядок | Довжина: 2-512 символів                   | Так          |
 | `addresses.*.address` | Рядок | Довжина: 2-512 символів          | Так          |
 
