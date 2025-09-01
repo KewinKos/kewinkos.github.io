@@ -47,13 +47,13 @@
 - **Тіло запиту (JSON):**  
   Див. [приклад у файлі колекції](https://github.com/RomanStuzhuk/Sync-Api-Sale-Offers/blob/main/SyncAPISaleOffers.postman_collection) (поля `page`, `perPage`).
 - **Опис:**  
-  ООтримання списку оферів із перекладами та адресами.
+  Отримання списку оферів із перекладами та адресами.
   
 ---
 
 ### 5. Видалення офера
 - **Метод:** `DELETE`
-- **URL:** `{{url}}/api/sync/sale-offers/remove-offer/::external_id`
+- **URL:** `{{url}}/api/sync/sale-offers/remove-offer/:external_id`
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Опис:**  
@@ -73,7 +73,7 @@
 
 ### 7. Додавання адрес до офера
 - **Метод:** `POST`
-- **URL:** `{{url}}/api/sync/sale-offers/add-addresses/::external_id`
+- **URL:** `{{url}}/api/sync/sale-offers/add-addresses/:external_id`
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Тіло запиту (JSON):**  
@@ -85,7 +85,7 @@
 
 ### 8. Видалення адрес офера
 - **Метод:** `DELETE`
-- **URL:** `{{url}}/api/sync/sale-offers/remove-addresses/::external_id`
+- **URL:** `{{url}}/api/sync/sale-offers/remove-addresses/:external_id`
 - **Заголовок:**  
   `Authorization: Bearer <JWT_TOKEN>`
 - **Тіло запиту (JSON):**  
