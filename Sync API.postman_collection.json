@@ -428,6 +428,45 @@
 				"url": "{{url}}/api/sync/discount/{discount_external_id}/remove-addresses/{offer_id}"
 			},
 			"response": []
+		},
+		{
+			"name": "Update Shop Addresses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shop\": \"ShopName\",\r\n    \"address\": [\r\n        {\r\n        \"lat\": 50.504517,\r\n        \"lon\": 30.831982,\r\n        \"uk\": {\r\n            \"city\": \"м. Бровари\",\r\n            \"regionName\": \"Київська обл.\",\r\n            \"address\": \"вул. Москаленка Сергія, 39\"\r\n        },\r\n        \"ru\": {\r\n            \"city\": \"м. Бровари\",\r\n            \"regionName\": \"Київська обл.\",\r\n            \"address\": \"вул. Москаленка Сергія, 39\"\r\n        }\r\n    },\r\n    {\r\n        \"lat\": 50.596159,\r\n        \"lon\": 30.451334,\r\n        \"uk\": {\r\n            \"city\": \"м. Вишгород\",\r\n            \"regionName\": \"Київська обл.\",\r\n            \"address\": \"вул. Ягідна, 5-А\"\r\n        },\r\n        \"ru\": {\r\n            \"city\": \"м. Вишгород\",\r\n            \"regionName\": \"Київська обл.\",\r\n            \"address\": \"вул. Ягідна, 5-А\"\r\n        }\r\n    }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/sync/addresses/update",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"sync",
+						"addresses",
+						"update"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
